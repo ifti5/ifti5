@@ -1,4 +1,4 @@
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=200&size=12&pause=1000&color=0ADAF7&width=435&lines=Experience+is+the+name+everyone+gives+to+their+mistakes;Fix+the+cause%2C+not+the+symptom." alt="Typing SVG" /></a>
+<a align="center" href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=200&size=12&pause=1000&color=0ADAF7&width=435&lines=Experience+is+the+name+everyone+gives+to+their+mistakes;Fix+the+cause%2C+not+the+symptom." alt="Typing SVG" /></a>
 
 ###
 
