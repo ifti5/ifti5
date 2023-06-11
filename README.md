@@ -70,6 +70,6 @@
 
 <br clear="both">
 
-<img src="https://raw.githubusercontent.com/ifti5/ifti5/output/snake.svg" alt="Snake animation" />
+
 
 ###
