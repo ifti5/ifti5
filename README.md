@@ -15,10 +15,16 @@
 ---
 
 <!-- GitHub Stats with Glassmorphism Feel -->
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ifti5&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&border_radius=15" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ifti5&layout=compact&langs_count=7&theme=tokyonight&border_radius=15" width="41%" />
-</p>
+<table align="center">
+  <tr>
+    <td width="50%">
+      <img src="https://github-readme-stats.vercel.app/api?username=ifti5&show_icons=true&theme=tokyonight&border_radius=15&hide_title=false&include_all_commits=false" />
+    </td>
+    <td width="50%">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ifti5&layout=compact&langs_count=7&theme=tokyonight&border_radius=15" />
+    </td>
+  </tr>
+</table>
 
 ---
 
