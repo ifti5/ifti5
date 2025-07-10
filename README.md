@@ -1,34 +1,39 @@
-<!-- Header Typing Effect -->
+<!-- Animated Header with Gradient -->
 <p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00F2FF&center=true&vCenter=true&width=800&lines=Experience+is+the+name+everyone+gives+to+their+mistakes.;Fix+the+cause,+not+the+symptom.">
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1000&color=00FFF7&background=00000000&center=true&vCenter=true&width=800&lines=Experience+is+the+name+everyone+gives+to+their+mistakes.;Fix+the+cause,+not+the+symptom.;Welcome+to+Ifte's+Dev+Universe+🌐" />
 </p>
 
-<!-- 3D Glass Card GitHub Stats -->
+<!-- Custom Background Section with Semi-Transparent Glass -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ifti5&show_icons=true&theme=radical&border_radius=20&include_all_commits=true&count_private=true" width="400" style="border-radius:20px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ifti5&layout=compact&langs_count=6&theme=radical&card_width=320&hide_border=false" width="350" style="border-radius:20px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);" />
+  <img src="https://i.ibb.co/g69K2vK/animated-bg.gif" width="100%" alt="animated background" />
 </p>
 
 ---
 
-<!-- Cool Developer GIF -->
+<!-- GitHub Stats with Shadows and Rounded Corners -->
 <p align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="320" style="border-radius:15px; box-shadow: 0 10px 20px rgba(0,0,0,0.2);" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ifti5&show_icons=true&theme=radical&hide_border=false&include_all_commits=true&count_private=true&border_radius=20" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ifti5&layout=compact&langs_count=7&theme=radical&border_radius=20" width="41%" />
 </p>
 
 ---
 
-<!-- Tech Stack with Stylish 3D Icons -->
-<h3 align="center">⚙️ Tech Stack</h3>
+<!-- Glowing Developer GIF -->
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,bootstrap,tailwind,js,react,python,django,mysql,mongodb,java,figma,photoshop,git,gitlab,canva" />
+  <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="340" style="border-radius:20px;" />
 </p>
 
 ---
 
-<!-- Social Media Links with Icons -->
+<!-- 3D Tech Stack with Neon Icons -->
+<h3 align="center">⚙️ My Tech Arsenal</h3>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,tailwind,react,python,django,mysql,mongodb,java,figma,photoshop,git,github,gitlab,canva&theme=dark" />
+</p>
+
+---
+
+<!-- Social Media Buttons -->
 <h3 align="center">🌐 Connect with Me</h3>
 <p align="center">
   <a href="https://www.linkedin.com/in/ifte-khar-76211419b/" target="_blank">
@@ -47,7 +52,7 @@
 
 ---
 
-<!-- Footer Wave -->
+<!-- Wave Footer with Gradient -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00F2FF&height=120&section=footer" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=FF6AC1&color2=0ADAF7&section=footer"/>
 </p>
