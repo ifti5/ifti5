@@ -1,7 +1,7 @@
 <!-- Animated Typing Header with Multiple Quotes -->
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1800&color=00F2FF&center=true&vCenter=true&width=800&lines=Experience+is+the+name+everyone+gives+to+their+mistakes.;Fix+the+cause,+not+the+symptom.;Keep+learning,+keep+building." alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=22&pause=1800&color=FF6A00&center=true&vCenter=true&width=850&lines=Experience+is+the+name+everyone+gives+to+their+mistakes.;Fix+the+cause,+not+the+symptom.;Keep+learning,+keep+building.;" alt="Typing SVG" />
   </a>
 </p>
 
