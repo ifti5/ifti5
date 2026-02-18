@@ -6,10 +6,7 @@
 </p>
 ---
 <!-- Cool Animated Tech Background -->
-<p align="center">
-  <img src="https://i.ibb.co/g69K2vK/animated-bg.gif" width="100%" alt="animated tech background" />
-</p>
----
+
 <!-- GitHub Stats with Glassmorphism Feel -->
 <table align="center">
   <tr>
