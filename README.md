@@ -23,11 +23,10 @@
 <!-- ================== GITHUB STATS ================== -->
 <h3 align="center">📊 GitHub Analytics</h3>
 
-<table align="center">
-  <tr>
-    <td width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=ifti5&show_icons=true&theme=tokyonight&border_radius=20&hide_title=false&include_all_commits=false" />
-    </td>
+<p align="center">
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=ifti5&show_icons=true&theme=tokyonight&border_radius=20&hide_title=false" />
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ifti5&layout=compact&langs_count=8&theme=tokyonight&border_radius=20" />
+</p>
     <td width="50%">
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ifti5&layout=compact&langs_count=8&theme=tokyonight&border_radius=20" />
     </td>
