@@ -7,7 +7,7 @@
   </a>
 </p>
 
----
+
 
 <!-- ================== ABOUT / DEV ANIMATION ================== -->
 <p align="center">
@@ -16,7 +16,7 @@
 
 <h3 align="center"> Passionate Developer | Problem Solver | Continuous Learner</h3>
 
----
+
 
 <!-- ================== GITHUB STATS ================== -->
 <h3 align="center">GitHub Analytics</h3>
@@ -25,14 +25,14 @@
   </tr>
 </table>
 
----
+
 
 <!-- ================== STREAK ================== -->
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com?user=ifti5&theme=tokyonight&border_radius=20"/>
 </p>
 
----
+
 
 <!-- ================== TECH STACK ================== -->
 <h3 align="center">💻 Tech Stack</h3>
@@ -41,7 +41,7 @@
   <img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,tailwind,react,python,django,mysql,mongodb,java,git,github,figma,photoshop,canva&theme=dark" />
 </p>
 
----
+
 
 <!-- ================== TOOLS / INTERESTS ================== -->
 <h3 align="center">🛠️ Tools, Skills & Interests</h3>
@@ -75,7 +75,7 @@
   <img src="https://skillicons.dev/icons?i=python,tensorflow" /><br/>
   <b>Machine Learning</b>
 </p>
----
+
 
 <!-- ================== SOCIAL LINKS ================== -->
 <h3 align="center"> Connect With Me</h3>
@@ -94,14 +94,14 @@
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
 </p>
----
+
 
 <!-- ================== PROFILE VIEWS ================== -->
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=ifti5&label=Profile%20Views&color=000000&style=plastic" />
 </p>
 
----
+
 
 <!-- ================== FOOTER ================== -->
 <p align="center">
