@@ -41,6 +41,11 @@
   <img src="https://skillicons.dev/icons?i=html,css,js,bootstrap,tailwind,react,python,django,mysql,mongodb,java,git,github,figma,photoshop,canva&theme=dark" />
 </p>
 
+<h3 align="center">📅 Contribution Activity</h3>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ifti5&theme=tokyo-night&radius=12" />
+</p>
 
 
 <!-- ================== TOOLS / INTERESTS ================== -->
