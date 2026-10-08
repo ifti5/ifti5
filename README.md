@@ -1,88 +1,147 @@
 <!-- =========================================================
-     IFTE KHAR — ANIMATED GITHUB PROFILE README
-     GitHub: https://github.com/ifti5
+     IFTE KHAR — GITHUB PROFILE README
+     GitHub username: ifti5
 ========================================================== -->
 
 <div align="center">
 
-<!-- Animated premium header -->
+<!-- ===================== ANIMATED HEADER ===================== -->
 
 <img
   width="100%"
-  src="https://capsule-render.vercel.app/api?type=waving&height=260&color=0:050505,35:171022,70:3B2268,100:C6A15B&text=IFTE%20KHAR&fontColor=FFF9ED&fontSize=68&fontAlignY=39&animation=fadeIn&stroke=C6A15B&strokeWidth=1&desc=SOFTWARE%20DEVELOPMENT%20ENTHUSIAST%20%E2%80%A2%20CREATIVE%20BUILDER&descAlignY=59&descSize=17"
+  src="https://capsule-render.vercel.app/api?type=waving&height=280&color=0:020617,30:172554,60:312E81,82:7E22CE,100:F59E0B&text=IFTE%20KHAR&fontColor=FFFFFF&fontSize=70&fontAlignY=39&animation=fadeIn&stroke=F8FAFC&strokeWidth=1&desc=SYSTEM%20ENGINEER%20%E2%80%A2%20CREATIVE%20BUILDER%20%E2%80%A2%20TECHNOLOGY%20ENTHUSIAST&descAlignY=59&descSize=16"
 />
-
-<!-- Animated introduction -->
 
 <a href="https://git.io/typing-svg">
   <img
-    src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=22&duration=3200&pause=900&color=C6A15B&center=true&vCenter=true&repeat=true&random=false&width=950&height=60&lines=I+love+turning+ideas+into+working+software.;Building+websites%2C+small+tools%2C+and+useful+experiments.;Learning+through+curiosity%2C+practice%2C+and+real+projects.;Exploring+Python%2C+web+development%2C+AI%2C+and+robotics."
+    src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=22&duration=3000&pause=900&color=38BDF8&center=true&vCenter=true&repeat=true&width=950&height=60&lines=System+Engineer+at+Crystal+Martin;Building+websites%2C+tools%2C+and+automation+solutions;Exploring+Artificial+Intelligence+and+Machine+Learning;Interested+in+Robotics%2C+Data+Analysis%2C+and+Servers;Learning%2C+building%2C+and+improving+every+day"
     alt="Animated introduction"
   />
 </a>
 
 <br/>
 
-<!-- Identity badges -->
+<!-- ===================== STATUS BUTTON ROW ===================== -->
+
+<table>
+<tr>
+<td align="center">
 
 <img
-  src="https://img.shields.io/badge/LOCATION-BANGLADESH-0D0B12?style=for-the-badge&labelColor=C6A15B&color=0D0B12"
+  src="https://img.shields.io/badge/BASED%20IN-BANGLADESH-16A34A?style=for-the-badge&logo=googlemaps&logoColor=FFFFFF&labelColor=052E16"
   alt="Based in Bangladesh"
 />
 
+</td>
+<td align="center">
+
 <img
-  src="https://img.shields.io/badge/ROLE-CREATIVE%20BUILDER-0D0B12?style=for-the-badge&labelColor=7042C1&color=0D0B12"
-  alt="Creative builder"
+  src="https://img.shields.io/badge/CREATIVE-CREATIVE%20BUILDER-9333EA?style=for-the-badge&logo=codepen&logoColor=FFFFFF&labelColor=3B0764"
+  alt="Creative Builder"
+/>
+
+</td>
+<td align="center">
+
+<img
+  src="https://img.shields.io/badge/STATUS-LEARNING%20%26%20BUILDING-F59E0B?style=for-the-badge&logo=educative&logoColor=FFFFFF&labelColor=78350F"
+  alt="Learning and Building"
+/>
+
+</td>
+</tr>
+</table>
+
+<!-- ===================== CURRENT ROLE ===================== -->
+
+<img
+  src="https://img.shields.io/badge/CURRENT%20ROLE-SYSTEM%20ENGINEER-2563EB?style=for-the-badge&logo=windows&logoColor=FFFFFF&labelColor=172554"
+  alt="System Engineer"
 />
 
 <img
-  src="https://img.shields.io/badge/STATUS-LEARNING%20%26%20BUILDING-0D0B12?style=for-the-badge&labelColor=C6A15B&color=0D0B12"
-  alt="Learning and building"
+  src="https://img.shields.io/badge/ORGANIZATION-CRYSTAL%20MARTIN-06B6D4?style=for-the-badge&logo=opsgenie&logoColor=FFFFFF&labelColor=164E63"
+  alt="Crystal Martin"
 />
 
 <br/><br/>
 
-<!-- Social links -->
+<!-- ===================== SOCIAL BUTTON ROW ===================== -->
 
+<table>
+<tr>
+
+<td align="center">
 <a href="https://www.linkedin.com/in/ifte-khar-76211419b/">
   <img
-    src="https://img.shields.io/badge/LinkedIn-C6A15B?style=flat-square&logo=linkedin&logoColor=0D0B12&labelColor=C6A15B"
+    src="https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=FFFFFF&labelColor=082F49"
     alt="LinkedIn"
   />
 </a>
+</td>
 
+<td align="center">
 <a href="mailto:iftek155@gmail.com">
   <img
-    src="https://img.shields.io/badge/Email-8B5CF6?style=flat-square&logo=gmail&logoColor=white"
+    src="https://img.shields.io/badge/EMAIL-CONTACT%20ME-EA4335?style=for-the-badge&logo=gmail&logoColor=FFFFFF&labelColor=7F1D1D"
     alt="Email"
   />
 </a>
+</td>
 
+<td align="center">
 <a href="https://www.instagram.com/iftek155/">
   <img
-    src="https://img.shields.io/badge/Instagram-C6A15B?style=flat-square&logo=instagram&logoColor=0D0B12"
+    src="https://img.shields.io/badge/INSTAGRAM-FOLLOW-E4405F?style=for-the-badge&logo=instagram&logoColor=FFFFFF&labelColor=831843"
     alt="Instagram"
   />
 </a>
+</td>
 
+<td align="center">
 <a href="https://www.facebook.com/ifti0005/">
   <img
-    src="https://img.shields.io/badge/Facebook-8B5CF6?style=flat-square&logo=facebook&logoColor=white"
+    src="https://img.shields.io/badge/FACEBOOK-CONNECT-1877F2?style=for-the-badge&logo=facebook&logoColor=FFFFFF&labelColor=172554"
     alt="Facebook"
   />
 </a>
+</td>
 
-<br/><br/>
+</tr>
+</table>
 
+<!-- ===================== PROFILE METRICS ===================== -->
+
+<table>
+<tr>
+
+<td align="center">
 <img
-  src="https://komarev.com/ghpvc/?username=ifti5&label=PROFILE+VISITORS&color=C6A15B&style=flat-square"
+  src="https://komarev.com/ghpvc/?username=ifti5&label=PROFILE%20VISITORS&color=7C3AED&style=for-the-badge"
   alt="Profile visitors"
 />
+</td>
 
-<img
-  src="https://img.shields.io/github/followers/ifti5?label=FOLLOWERS&style=flat-square&color=8B5CF6&labelColor=0D0B12"
-  alt="GitHub followers"
-/>
+<td align="center">
+<a href="https://github.com/ifti5?tab=followers">
+  <img
+    src="https://img.shields.io/github/followers/ifti5?label=GITHUB%20FOLLOWERS&style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=111827&color=0EA5E9"
+    alt="GitHub followers"
+  />
+</a>
+</td>
+
+<td align="center">
+<a href="https://github.com/ifti5?tab=repositories">
+  <img
+    src="https://img.shields.io/badge/EXPLORE-MY%20PROJECTS-F59E0B?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=78350F"
+    alt="Explore projects"
+  />
+</a>
+</td>
+
+</tr>
+</table>
 
 </div>
 
@@ -95,12 +154,10 @@
 <div align="center">
 
 <img
-  width="72%"
-  src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:050505,50:C6A15B,100:050505"
-  alt="Divider"
+  width="78%"
+  src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:020617,25:0EA5E9,50:8B5CF6,75:EC4899,100:020617"
+  alt="Colorful divider"
 />
-
-<br/>
 
 <h2>About Me</h2>
 
@@ -109,42 +166,48 @@
 <table>
 <tr>
 
-<td width="58%" valign="middle">
+<td width="60%" valign="middle">
 
 <h3>Hello, I am Ifte Khar 👋</h3>
 
 <p>
-I am a <b>software development enthusiast</b> from Bangladesh who enjoys
-creating websites, small applications, automation tools, and practical
-software experiments.
+I currently work as a <b>System Engineer at Crystal Martin</b>, where my
+interests include systems, infrastructure, technical support, server
+maintenance, and practical technology solutions.
 </p>
 
 <p>
-I am not presenting myself as a professional software developer.
-I am a curious builder who learns by creating, testing, improving,
-and solving real problems through technology.
+I also enjoy developing software in my own time. I like creating websites,
+small tools, automation programs, data-based applications, and experimental
+projects that solve practical problems.
 </p>
 
 <p>
-My interests currently include web development, Python automation,
-backend systems, databases, machine learning, computer vision,
-and robotics.
+I do not describe myself as a traditional professional software developer.
+I am a <b>curious technology enthusiast and creative builder</b> who learns
+through research, experimentation, and real projects.
+</p>
+
+<p>
+My growing areas of interest include <b>Artificial Intelligence, Machine
+Learning, Robotics, Data Analysis, Computer Vision, Web Development,
+Automation, Server Administration, and System Engineering</b>.
 </p>
 
 <br/>
 
 <blockquote>
-I may still be learning, but every project helps me become a better builder.
+I learn by building, improve by experimenting, and grow by solving real problems.
 </blockquote>
 
 </td>
 
-<td width="42%" align="center" valign="middle">
+<td width="40%" align="center" valign="middle">
 
 <img
   width="330"
   src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"
-  alt="Developer coding animation"
+  alt="Software development animation"
 />
 
 </td>
@@ -155,23 +218,21 @@ I may still be learning, but every project helps me become a better builder.
 <br/>
 
 <!-- =========================================================
-                       QUICK OVERVIEW
+                    PROFESSIONAL OVERVIEW
 ========================================================== -->
 
 <div align="center">
 
 <img
-  width="72%"
-  src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:050505,50:8B5CF6,100:050505"
-  alt="Divider"
+  width="78%"
+  src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:020617,25:EC4899,50:8B5CF6,75:0EA5E9,100:020617"
+  alt="Colorful divider"
 />
 
-<br/>
-
-<h2>What I Enjoy Creating</h2>
+<h2>Professional and Technical Focus</h2>
 
 <p>
-Small ideas can become useful products when curiosity meets consistent practice.
+A combination of system engineering, software experimentation, data, and intelligent technology.
 </p>
 
 <br/>
@@ -179,67 +240,84 @@ Small ideas can become useful products when curiosity meets consistent practice.
 <table>
 <tr>
 
-<td width="25%" align="center" valign="top">
+<td width="33%" align="center" valign="top">
 
 <img
-  width="55"
-  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-  alt="Web development"
+  width="75"
+  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+  alt="System Engineering"
 />
 
-<h3>Websites</h3>
+<h3>System Engineering</h3>
 
 <p>
-Responsive websites with structured layouts and thoughtful interfaces.
+Technical operations, system support, troubleshooting, infrastructure,
+monitoring, and reliable system performance.
 </p>
+
+<img
+  src="https://img.shields.io/badge/SYSTEMS-2563EB?style=flat-square&logo=windows&logoColor=white"
+  alt="Systems"
+/>
+
+<img
+  src="https://img.shields.io/badge/INFRASTRUCTURE-7C3AED?style=flat-square&logo=serverfault&logoColor=white"
+  alt="Infrastructure"
+/>
 
 </td>
 
-<td width="25%" align="center" valign="top">
+<td width="33%" align="center" valign="top">
 
 <img
-  width="55"
+  width="75"
   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-  alt="Python tools"
+  alt="Software Development"
 />
 
-<h3>Small Tools</h3>
+<h3>Software and Automation</h3>
 
 <p>
-Python utilities, automation scripts, and practical desktop experiments.
+Websites, small utilities, Python automation, APIs, computer vision,
+and practical application development.
 </p>
+
+<img
+  src="https://img.shields.io/badge/PYTHON-3776AB?style=flat-square&logo=python&logoColor=white"
+  alt="Python"
+/>
+
+<img
+  src="https://img.shields.io/badge/AUTOMATION-16A34A?style=flat-square&logo=robotframework&logoColor=white"
+  alt="Automation"
+/>
 
 </td>
 
-<td width="25%" align="center" valign="top">
+<td width="33%" align="center" valign="top">
 
 <img
-  width="55"
-  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-  alt="Data applications"
-/>
-
-<h3>Data Projects</h3>
-
-<p>
-Applications that organize, process, store, and present useful information.
-</p>
-
-</td>
-
-<td width="25%" align="center" valign="top">
-
-<img
-  width="55"
+  width="75"
   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
-  alt="Intelligent experiments"
+  alt="Artificial Intelligence"
 />
 
-<h3>Experiments</h3>
+<h3>AI and Intelligent Systems</h3>
 
 <p>
-Machine learning, computer vision, intelligent automation, and robotics.
+Machine learning, artificial intelligence, computer vision,
+data analysis, robotics, and intelligent automation.
 </p>
+
+<img
+  src="https://img.shields.io/badge/AI-EC4899?style=flat-square&logo=openai&logoColor=white"
+  alt="Artificial Intelligence"
+/>
+
+<img
+  src="https://img.shields.io/badge/MACHINE%20LEARNING-F59E0B?style=flat-square&logo=tensorflow&logoColor=white"
+  alt="Machine Learning"
+/>
 
 </td>
 
@@ -251,71 +329,115 @@ Machine learning, computer vision, intelligent automation, and robotics.
 <br/>
 
 <!-- =========================================================
-                      CURRENT ACTIVITY
+                       CORE INTERESTS
 ========================================================== -->
 
 <div align="center">
 
 <img
-  width="72%"
-  src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:050505,50:C6A15B,100:050505"
-  alt="Divider"
+  width="78%"
+  src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:020617,25:0EA5E9,50:8B5CF6,75:F59E0B,100:020617"
+  alt="Colorful divider"
 />
 
-<br/>
-
-<h2>Current Activity</h2>
+<h2>Core Areas of Interest</h2>
 
 <br/>
 
 <table>
+
 <tr>
 
-<td width="50%" valign="top">
+<td width="33%" align="center" valign="top">
 
-<h3>🔭 Currently Building</h3>
+<img
+  src="https://img.shields.io/badge/ARTIFICIAL%20INTELLIGENCE-8B5CF6?style=for-the-badge&logo=openai&logoColor=FFFFFF&labelColor=312E81"
+  alt="Artificial Intelligence"
+/>
 
-<ul>
-  <li>Responsive websites and web interfaces</li>
-  <li>Small Python applications and utilities</li>
-  <li>Automation and computer-vision experiments</li>
-  <li>Database-connected applications</li>
-</ul>
-
-<h3>🌱 Currently Learning</h3>
-
-<ul>
-  <li>Full-stack development</li>
-  <li>Clean software architecture</li>
-  <li>Machine-learning fundamentals</li>
-  <li>Robotics and ROS concepts</li>
-</ul>
+<p>
+Exploring intelligent systems, AI-assisted tools, language models,
+automation, and practical AI applications.
+</p>
 
 </td>
 
-<td width="50%" valign="top">
+<td width="33%" align="center" valign="top">
 
-<h3>🎯 Current Goals</h3>
+<img
+  src="https://img.shields.io/badge/MACHINE%20LEARNING-F59E0B?style=for-the-badge&logo=tensorflow&logoColor=FFFFFF&labelColor=78350F"
+  alt="Machine Learning"
+/>
 
-<ul>
-  <li>Build more complete real-world projects</li>
-  <li>Improve code quality and organization</li>
-  <li>Contribute to open-source projects</li>
-  <li>Learn through collaboration and feedback</li>
-</ul>
+<p>
+Learning data preparation, model development, prediction,
+classification, and machine-learning workflows.
+</p>
 
-<h3>💬 Happy to Discuss</h3>
+</td>
 
-<ul>
-  <li>Web-development ideas</li>
-  <li>Python tools and automation</li>
-  <li>Beginner-friendly open-source projects</li>
-  <li>Creative technical experiments</li>
-</ul>
+<td width="33%" align="center" valign="top">
+
+<img
+  src="https://img.shields.io/badge/ROBOTICS-06B6D4?style=for-the-badge&logo=ros&logoColor=FFFFFF&labelColor=164E63"
+  alt="Robotics"
+/>
+
+<p>
+Interested in ROS, sensors, control logic, camera-based systems,
+automation, and software-hardware integration.
+</p>
 
 </td>
 
 </tr>
+
+<tr>
+
+<td width="33%" align="center" valign="top">
+
+<img
+  src="https://img.shields.io/badge/DATA%20ANALYSIS-10B981?style=for-the-badge&logo=pandas&logoColor=FFFFFF&labelColor=064E3B"
+  alt="Data Analysis"
+/>
+
+<p>
+Organizing, cleaning, processing, visualizing, and extracting
+useful insights from data.
+</p>
+
+</td>
+
+<td width="33%" align="center" valign="top">
+
+<img
+  src="https://img.shields.io/badge/SERVER%20MAINTENANCE-E11D48?style=for-the-badge&logo=linux&logoColor=FFFFFF&labelColor=881337"
+  alt="Server Maintenance"
+/>
+
+<p>
+Server configuration, maintenance, monitoring, troubleshooting,
+reliability, updates, and infrastructure support.
+</p>
+
+</td>
+
+<td width="33%" align="center" valign="top">
+
+<img
+  src="https://img.shields.io/badge/WEB%20DEVELOPMENT-2563EB?style=for-the-badge&logo=react&logoColor=FFFFFF&labelColor=172554"
+  alt="Web Development"
+/>
+
+<p>
+Creating responsive websites, reusable interfaces, backend services,
+APIs, and database-connected applications.
+</p>
+
+</td>
+
+</tr>
+
 </table>
 
 </div>
@@ -323,31 +445,29 @@ Machine learning, computer vision, intelligent automation, and robotics.
 <br/>
 
 <!-- =========================================================
-                      TECHNOLOGY STACK
+                       TECHNOLOGY STACK
 ========================================================== -->
 
 <div align="center">
 
 <img
-  width="72%"
-  src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:050505,50:8B5CF6,100:050505"
-  alt="Divider"
+  width="78%"
+  src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:020617,25:F59E0B,50:EC4899,75:8B5CF6,100:020617"
+  alt="Colorful divider"
 />
-
-<br/>
 
 <h2>Technology Playground</h2>
 
 <p>
-Technologies I use, practice, or currently explore.
+Technologies I use, study, experiment with, or plan to explore further.
 </p>
 
 <br/>
 
-<h3>Frontend Development</h3>
+<h3>Frontend and Web Development</h3>
 
 <img
-  src="https://skillicons.dev/icons?i=html,css,js,react,bootstrap,tailwind&theme=dark"
+  src="https://skillicons.dev/icons?i=html,css,js,react,bootstrap,tailwind&theme=dark&perline=6"
   alt="Frontend technologies"
 />
 
@@ -356,56 +476,137 @@ Technologies I use, practice, or currently explore.
 <h3>Programming and Backend</h3>
 
 <img
-  src="https://skillicons.dev/icons?i=python,django,java,nodejs&theme=dark"
+  src="https://skillicons.dev/icons?i=python,django,java,nodejs,fastapi&theme=dark&perline=5"
   alt="Programming and backend technologies"
 />
 
 <br/><br/>
 
-<h3>Databases and Data</h3>
+<h3>Artificial Intelligence, Machine Learning and Data</h3>
 
 <img
-  src="https://skillicons.dev/icons?i=mysql,mongodb,tensorflow&theme=dark"
-  alt="Database and data technologies"
+  src="https://skillicons.dev/icons?i=tensorflow,opencv,python,mysql,mongodb&theme=dark&perline=5"
+  alt="AI, machine learning and data technologies"
 />
 
 <br/><br/>
 
-<h3>Tools and Platforms</h3>
+<h3>Systems, Servers and Development Tools</h3>
 
 <img
-  src="https://skillicons.dev/icons?i=git,github,vscode,linux,docker&theme=dark"
-  alt="Development tools"
+  src="https://skillicons.dev/icons?i=linux,windows,docker,git,github,vscode,bash,powershell&theme=dark&perline=8"
+  alt="Systems and development tools"
 />
 
 <br/><br/>
 
-<p>
-<img src="https://img.shields.io/badge/Computer%20Vision-211839?style=for-the-badge&logo=opencv&logoColor=white"/>
-<img src="https://img.shields.io/badge/Automation-211839?style=for-the-badge&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/REST%20APIs-211839?style=for-the-badge&logo=fastapi&logoColor=white"/>
-<img src="https://img.shields.io/badge/ROS-211839?style=for-the-badge&logo=ros&logoColor=white"/>
-</p>
+<table>
+<tr>
+
+<td align="center">
+<img src="https://img.shields.io/badge/COMPUTER%20VISION-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
+</td>
+
+<td align="center">
+<img src="https://img.shields.io/badge/DATA%20ANALYSIS-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+</td>
+
+<td align="center">
+<img src="https://img.shields.io/badge/ROBOTICS-22314E?style=for-the-badge&logo=ros&logoColor=white"/>
+</td>
+
+<td align="center">
+<img src="https://img.shields.io/badge/SERVER%20ADMINISTRATION-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+</td>
+
+</tr>
+</table>
 
 </div>
 
 <br/>
 
 <!-- =========================================================
-                    LEARNING JOURNEY
+                       CURRENT DIRECTION
 ========================================================== -->
 
 <div align="center">
 
 <img
-  width="72%"
-  src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:050505,50:C6A15B,100:050505"
-  alt="Divider"
+  width="78%"
+  src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:020617,25:06B6D4,50:8B5CF6,75:EC4899,100:020617"
+  alt="Colorful divider"
 />
+
+<h2>Current Direction</h2>
+
+</div>
+
+<table>
+<tr>
+
+<td width="50%" valign="top">
+
+<h3>🖥️ Working</h3>
+
+<ul>
+  <li>Working as a System Engineer at Crystal Martin</li>
+  <li>Supporting technical systems and operations</li>
+  <li>Maintaining reliable system environments</li>
+  <li>Troubleshooting infrastructure and system issues</li>
+</ul>
+
+<h3>🔨 Building</h3>
+
+<ul>
+  <li>Small Python tools and automation applications</li>
+  <li>Responsive websites and user interfaces</li>
+  <li>Computer-vision and monitoring systems</li>
+  <li>Database-connected software projects</li>
+</ul>
+
+</td>
+
+<td width="50%" valign="top">
+
+<h3>📚 Learning</h3>
+
+<ul>
+  <li>Artificial Intelligence and Machine Learning</li>
+  <li>Data Analysis and visualization</li>
+  <li>Robotics and Robot Operating System</li>
+  <li>Server administration and infrastructure</li>
+</ul>
+
+<h3>🎯 Improving</h3>
+
+<ul>
+  <li>Software architecture and code quality</li>
+  <li>System reliability and performance</li>
+  <li>Automation and intelligent monitoring</li>
+  <li>Practical problem-solving through technology</li>
+</ul>
+
+</td>
+
+</tr>
+</table>
 
 <br/>
 
-<h2>How I Approach Development</h2>
+<!-- =========================================================
+                    DEVELOPMENT PHILOSOPHY
+========================================================== -->
+
+<div align="center">
+
+<img
+  width="78%"
+  src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:020617,25:EC4899,50:F59E0B,75:0EA5E9,100:020617"
+  alt="Colorful divider"
+/>
+
+<h2>How I Learn and Build</h2>
 
 <br/>
 
@@ -414,48 +615,44 @@ Technologies I use, practice, or currently explore.
 
 <td width="25%" align="center" valign="top">
 
-<h1>01</h1>
-
+<h1>💡</h1>
 <h3>Imagine</h3>
 
 <p>
-Start with a problem, an idea, or something interesting to explore.
+Begin with a useful idea, a real challenge, or an interesting technical question.
 </p>
 
 </td>
 
 <td width="25%" align="center" valign="top">
 
-<h1>02</h1>
-
+<h1>🛠️</h1>
 <h3>Build</h3>
 
 <p>
-Turn the idea into a small working version instead of waiting for perfection.
+Create a working version and transform the idea into practical software.
 </p>
 
 </td>
 
 <td width="25%" align="center" valign="top">
 
-<h1>03</h1>
-
+<h1>🧪</h1>
 <h3>Test</h3>
 
 <p>
-Find weaknesses, learn from mistakes, and understand what can be improved.
+Experiment, identify weaknesses, and understand how the system behaves.
 </p>
 
 </td>
 
 <td width="25%" align="center" valign="top">
 
-<h1>04</h1>
-
+<h1>🚀</h1>
 <h3>Improve</h3>
 
 <p>
-Refine the code, interface, performance, and overall user experience.
+Refine the code, reliability, performance, interface, and overall experience.
 </p>
 
 </td>
@@ -467,8 +664,8 @@ Refine the code, interface, performance, and overall user experience.
 
 <a href="https://git.io/typing-svg">
   <img
-    src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=500&size=18&duration=2800&pause=1000&color=8B5CF6&center=true&vCenter=true&repeat=true&width=850&height=45&lines=Learn+something.+Build+something.+Improve+something.;Progress+comes+from+consistent+experimentation.;Every+project+is+part+of+the+journey."
-    alt="Animated development philosophy"
+    src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=500&size=18&duration=2800&pause=900&color=F59E0B&center=true&vCenter=true&repeat=true&width=900&height=50&lines=Learn+something.+Build+something.+Improve+something.;Technology+becomes+valuable+when+it+solves+real+problems.;Every+project+is+another+step+forward."
+    alt="Animated philosophy"
   />
 </a>
 
@@ -477,139 +674,51 @@ Refine the code, interface, performance, and overall user experience.
 <br/>
 
 <!-- =========================================================
-                      DEVELOPMENT VALUES
+                       GITHUB ANALYTICS
 ========================================================== -->
 
 <div align="center">
 
 <img
-  width="72%"
-  src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:050505,50:8B5CF6,100:050505"
-  alt="Divider"
+  width="78%"
+  src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:020617,25:0EA5E9,50:8B5CF6,75:F59E0B,100:020617"
+  alt="Colorful divider"
 />
 
-<br/>
-
-<h2>What Matters to Me</h2>
-
-<br/>
-
-<table>
-<tr>
-
-<td width="25%" align="center" valign="top">
-
-<h3>💡 Curiosity</h3>
+<h2>GitHub Analytics</h2>
 
 <p>
-Learning begins by asking questions and exploring unfamiliar ideas.
-</p>
-
-</td>
-
-<td width="25%" align="center" valign="top">
-
-<h3>🧩 Practicality</h3>
-
-<p>
-A small tool that solves a real problem can be more valuable than a complex demo.
-</p>
-
-</td>
-
-<td width="25%" align="center" valign="top">
-
-<h3>🎨 Creativity</h3>
-
-<p>
-Software is both technical engineering and a way to express ideas.
-</p>
-
-</td>
-
-<td width="25%" align="center" valign="top">
-
-<h3>📈 Improvement</h3>
-
-<p>
-Mistakes are useful when they lead to better decisions and stronger skills.
-</p>
-
-</td>
-
-</tr>
-</table>
-
-</div>
-
-<br/>
-
-<!-- =========================================================
-                       GITHUB STATISTICS
-========================================================== -->
-
-<div align="center">
-
-<img
-  width="72%"
-  src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:050505,50:C6A15B,100:050505"
-  alt="Divider"
-/>
-
-<br/>
-
-<h2>GitHub Overview</h2>
-
-<p>
-A dynamic summary of my repositories, languages, and development activity.
+A dynamic view of my repositories, languages, commits, and development activity.
 </p>
 
 <br/>
 
-<p>
 <img
   width="49%"
-  src="https://github-readme-stats.vercel.app/api?username=ifti5&show_icons=true&hide_border=true&bg_color=0D0B12&title_color=C6A15B&text_color=EEE7D8&icon_color=8B5CF6&ring_color=C6A15B&border_radius=14&include_all_commits=true&count_private=true"
-  alt="Ifte Khar's GitHub statistics"
+  src="https://github-readme-stats.vercel.app/api?username=ifti5&show_icons=true&hide_border=true&bg_color=00000000&title_color=38BDF8&text_color=E2E8F0&icon_color=F59E0B&ring_color=8B5CF6&border_radius=18&include_all_commits=true&count_private=true"
+  alt="GitHub statistics"
 />
 
 <img
   width="49%"
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=ifti5&layout=compact&hide_border=true&bg_color=0D0B12&title_color=C6A15B&text_color=EEE7D8&border_radius=14&langs_count=8"
-  alt="Most used programming languages"
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=ifti5&layout=compact&hide_border=true&bg_color=00000000&title_color=F59E0B&text_color=E2E8F0&border_radius=18&langs_count=10"
+  alt="Most used languages"
 />
-</p>
 
-<br/>
+<br/><br/>
 
 <img
-  width="72%"
-  src="https://github-readme-streak-stats.herokuapp.com?user=ifti5&hide_border=true&background=0D0B12&ring=C6A15B&fire=8B5CF6&currStreakLabel=C6A15B&sideLabels=EEE7D8&currStreakNum=FFF9ED&sideNums=FFF9ED&dates=918A9D&border_radius=14"
+  width="75%"
+  src="https://streak-stats.demolab.com?user=ifti5&hide_border=true&background=00000000&ring=8B5CF6&fire=F59E0B&currStreakLabel=38BDF8&sideLabels=E2E8F0&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=94A3B8&border_radius=18"
   alt="GitHub contribution streak"
 />
 
-</div>
-
-<br/>
-
-<!-- =========================================================
-                     CONTRIBUTION GRAPH
-========================================================== -->
-
-<div align="center">
-
-<h2>Contribution Activity</h2>
-
-<p>
-My activity is part of an ongoing learning and building journey.
-</p>
-
-<br/>
+<br/><br/>
 
 <img
   width="98%"
-  src="https://github-readme-activity-graph.vercel.app/graph?username=ifti5&bg_color=0D0B12&color=C6A15B&line=8B5CF6&point=FFF9ED&area=true&area_color=3C256B&hide_border=true&radius=14"
-  alt="GitHub contribution activity graph"
+  src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ifti5&theme=tokyonight"
+  alt="GitHub profile summary"
 />
 
 </div>
@@ -617,154 +726,195 @@ My activity is part of an ongoing learning and building journey.
 <br/>
 
 <!-- =========================================================
-                     PROFILE DETAILS
+                  ANIMATED CONTRIBUTION SECTION
 ========================================================== -->
 
 <div align="center">
 
 <img
-  width="72%"
-  src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:050505,50:8B5CF6,100:050505"
-  alt="Divider"
+  width="78%"
+  src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:020617,20:10B981,45:0EA5E9,70:8B5CF6,100:020617"
+  alt="Colorful divider"
 />
+
+<h2>Animated Contribution Journey</h2>
+
+<p>
+Every contribution represents another experiment, lesson, improvement, or completed idea.
+</p>
 
 <br/>
 
-<h2>Explore My Interests</h2>
+<!-- Animated contribution snake generated by GitHub Actions -->
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/ifti5/ifti5/output/github-contribution-grid-snake-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/ifti5/ifti5/output/github-contribution-grid-snake.svg"
+  />
+  <img
+    width="100%"
+    alt="Animated GitHub contribution snake"
+    src="https://raw.githubusercontent.com/ifti5/ifti5/output/github-contribution-grid-snake.svg"
+  />
+</picture>
+
+<br/><br/>
+
+<img
+  width="98%"
+  src="https://github-readme-activity-graph.vercel.app/graph?username=ifti5&bg_color=020617&color=38BDF8&line=8B5CF6&point=F59E0B&area=true&area_color=312E81&hide_border=true&radius=16&custom_title=IFTE%20KHAR'S%20CONTRIBUTION%20ACTIVITY"
+  alt="Animated-style GitHub contribution graph"
+/>
+
+</div>
+
+<br/>
+
+<!-- =========================================================
+                      EXPANDABLE DETAILS
+========================================================== -->
+
+<div align="center">
+
+<img
+  width="78%"
+  src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:020617,25:F59E0B,50:EC4899,75:8B5CF6,100:020617"
+  alt="Colorful divider"
+/>
+
+<h2>Explore My Technical Interests</h2>
 
 <p>
-Open a section to learn more about the areas I am exploring.
+Select a section to learn more about the technologies I am exploring.
 </p>
 
 </div>
 
 <details>
-<summary><b>🌐 Website and Interface Development</b></summary>
+<summary><b>🖥️ System Engineering and Server Maintenance</b></summary>
 
 <br/>
 
-I enjoy creating websites and interfaces that are visually organized,
-responsive, and easy to understand.
+As a System Engineer, my interests include:
 
-Areas I am practicing include:
+- System configuration and maintenance
+- Infrastructure monitoring
+- Technical troubleshooting
+- Server administration
+- User and access management
+- System reliability and availability
+- Backup and recovery planning
+- Network and service monitoring
+- Security updates and patch management
+- Process automation
 
-- Responsive page layouts
+</details>
+
+<br/>
+
+<details>
+<summary><b>🌐 Website and Application Development</b></summary>
+
+<br/>
+
+I enjoy developing websites and applications with a focus on:
+
+- Responsive web layouts
 - HTML, CSS, and JavaScript
 - React components
-- Bootstrap and Tailwind CSS
-- Navigation and interface structure
-- Accessible user interactions
-- Frontend and backend integration
+- Python and Django applications
+- Backend services
+- REST API integration
+- Database-connected applications
+- Simple and understandable user experiences
 
 </details>
 
 <br/>
 
 <details>
-<summary><b>🐍 Python Tools and Automation</b></summary>
+<summary><b>🧠 Artificial Intelligence and Machine Learning</b></summary>
 
 <br/>
 
-Python allows me to quickly transform practical ideas into working tools.
+My learning direction includes:
 
-I use or explore Python for:
-
-- Task automation
-- File and data processing
-- Small desktop utilities
-- Backend development
-- API integrations
-- Computer-vision experiments
+- Artificial Intelligence fundamentals
 - Machine-learning workflows
+- Data preparation and feature processing
+- Model training and evaluation
+- TensorFlow experimentation
+- Intelligent automation
+- Predictive systems
+- AI-assisted software tools
 
 </details>
 
 <br/>
 
 <details>
-<summary><b>🧠 Machine Learning and Computer Vision</b></summary>
+<summary><b>📊 Data Analysis</b></summary>
 
 <br/>
 
-I am exploring how software can recognize patterns, process visual
-information, and support intelligent automation.
+I am interested in using data to better understand systems and support decisions through:
 
-Current areas of interest include:
-
-- Data preparation
-- Machine-learning fundamentals
-- TensorFlow experiments
-- OpenCV applications
-- Object and hand detection
-- Activity recognition
-- Practical AI-assisted tools
+- Data collection
+- Data cleaning and transformation
+- Exploratory data analysis
+- Statistical summaries
+- Data visualization
+- Reporting and dashboards
+- Python-based data processing
+- Pattern and trend identification
 
 </details>
 
 <br/>
 
 <details>
-<summary><b>🤖 Robotics and Intelligent Systems</b></summary>
+<summary><b>🤖 Robotics and Computer Vision</b></summary>
 
 <br/>
 
-Robotics interests me because it connects software with real-world movement,
-sensors, automation, and decision-making.
-
-Topics I want to explore further include:
+My robotics and computer-vision interests include:
 
 - Robot Operating System
+- OpenCV applications
+- Camera-based monitoring
+- Hand and object detection
 - Sensor integration
-- Camera-based automation
-- Robotic control logic
-- Intelligent monitoring systems
-- Software and hardware communication
-
-</details>
-
-<br/>
-
-<details>
-<summary><b>🗄️ Databases and Backend Systems</b></summary>
-
-<br/>
-
-I am learning to build applications that store and manage data reliably.
-
-My areas of practice include:
-
-- MySQL
-- MongoDB
-- Database modeling
-- CRUD applications
-- REST API development
-- Authentication concepts
-- Backend organization
-- Data validation
+- Control logic
+- Intelligent automation
+- Software-hardware communication
+- Real-time activity recognition
 
 </details>
 
 <br/>
 
 <!-- =========================================================
-                       COLLABORATION
+                        CONNECT SECTION
 ========================================================== -->
 
 <div align="center">
 
 <img
-  width="72%"
-  src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:050505,50:C6A15B,100:050505"
-  alt="Divider"
+  width="78%"
+  src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:020617,20:EC4899,45:8B5CF6,70:0EA5E9,100:020617"
+  alt="Colorful divider"
 />
 
-<br/>
-
-<h2>Let Us Build Something</h2>
+<h2>Let Us Connect</h2>
 
 <p>
-I am open to learning, collaboration, beginner-friendly open-source work,
-creative experiments, and interesting software ideas.
+I am open to technical discussions, learning opportunities, creative projects,
+collaboration, and practical technology ideas.
 </p>
 
 <br/>
@@ -772,108 +922,50 @@ creative experiments, and interesting software ideas.
 <table>
 <tr>
 
-<td align="center" width="33%">
-
-<h3>💻 Build</h3>
-
-<p>
-Websites, useful tools, automation, and small applications.
-</p>
-
+<td align="center">
+<a href="https://www.linkedin.com/in/ifte-khar-76211419b/">
+  <img
+    src="https://img.shields.io/badge/LINKEDIN-LET'S%20CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=FFFFFF&labelColor=082F49"
+    alt="Connect on LinkedIn"
+  />
+</a>
 </td>
 
-<td align="center" width="33%">
-
-<h3>🤝 Collaborate</h3>
-
-<p>
-Work together, exchange ideas, and learn from different perspectives.
-</p>
-
+<td align="center">
+<a href="mailto:iftek155@gmail.com">
+  <img
+    src="https://img.shields.io/badge/EMAIL-SEND%20A%20MESSAGE-EA4335?style=for-the-badge&logo=gmail&logoColor=FFFFFF&labelColor=7F1D1D"
+    alt="Send an email"
+  />
+</a>
 </td>
 
-<td align="center" width="33%">
-
-<h3>🚀 Improve</h3>
-
-<p>
-Turn early experiments into clearer and more reliable projects.
-</p>
-
+<td align="center">
+<a href="https://github.com/ifti5?tab=repositories">
+  <img
+    src="https://img.shields.io/badge/GITHUB-EXPLORE%20PROJECTS-8B5CF6?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=312E81"
+    alt="Explore GitHub projects"
+  />
+</a>
 </td>
 
 </tr>
 </table>
 
-<br/>
+<br/><br/>
 
 <a href="mailto:iftek155@gmail.com">
   <img
-    src="https://img.shields.io/badge/LET'S%20BUILD%20SOMETHING-START%20A%20CONVERSATION-C6A15B?style=for-the-badge&labelColor=0D0B12&color=C6A15B"
-    alt="Start a conversation"
+    src="https://img.shields.io/badge/HAVE%20AN%20IDEA%3F-LET'S%20BUILD%20SOMETHING-10B981?style=for-the-badge&logo=rocket&logoColor=FFFFFF&labelColor=064E3B"
+    alt="Let's build something"
   />
 </a>
 
-</div>
-
-<br/>
-
-<!-- =========================================================
-                         CONTACT
-========================================================== -->
-
-<div align="center">
-
-<img
-  width="72%"
-  src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:050505,50:8B5CF6,100:050505"
-  alt="Divider"
-/>
-
-<br/>
-
-<h2>Connect With Me</h2>
-
-<p>
-Have an idea, suggestion, learning resource, or collaboration opportunity?
-Feel free to reach out.
-</p>
-
-<br/>
-
-<a href="https://www.linkedin.com/in/ifte-khar-76211419b/">
-  <img
-    src="https://img.shields.io/badge/LINKEDIN-C6A15B?style=for-the-badge&logo=linkedin&logoColor=0D0B12&labelColor=C6A15B"
-    alt="LinkedIn"
-  />
-</a>
-
-<a href="mailto:iftek155@gmail.com">
-  <img
-    src="https://img.shields.io/badge/EMAIL-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white&labelColor=8B5CF6"
-    alt="Email"
-  />
-</a>
-
-<a href="https://www.instagram.com/iftek155/">
-  <img
-    src="https://img.shields.io/badge/INSTAGRAM-C6A15B?style=for-the-badge&logo=instagram&logoColor=0D0B12&labelColor=C6A15B"
-    alt="Instagram"
-  />
-</a>
-
-<a href="https://www.facebook.com/ifti0005/">
-  <img
-    src="https://img.shields.io/badge/FACEBOOK-8B5CF6?style=for-the-badge&logo=facebook&logoColor=white&labelColor=8B5CF6"
-    alt="Facebook"
-  />
-</a>
-
-<br/><br/><br/>
+<br/><br/>
 
 <a href="https://git.io/typing-svg">
   <img
-    src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=500&size=18&duration=3500&pause=1300&color=C6A15B&center=true&vCenter=true&repeat=true&width=850&height=50&lines=Curious+mind.+Creative+ideas.+Continuous+learning.;Building+one+project+at+a+time.;Thank+you+for+visiting+my+profile."
+    src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=18&duration=3200&pause=1100&color=38BDF8&center=true&vCenter=true&repeat=true&width=900&height=50&lines=System+Engineer+by+profession.;Creative+builder+by+passion.;Always+learning.+Always+experimenting.;Thank+you+for+visiting+my+profile."
     alt="Animated closing message"
   />
 </a>
@@ -881,16 +973,16 @@ Feel free to reach out.
 <br/>
 
 <img
-  src="https://capsule-render.vercel.app/api?type=transparent&height=70&text=KEEP%20LEARNING%20%E2%80%A2%20KEEP%20BUILDING&fontColor=C6A15B&fontSize=20&animation=twinkling"
-  alt="Keep learning and building"
+  src="https://capsule-render.vercel.app/api?type=transparent&height=75&text=LEARN%20%E2%80%A2%20BUILD%20%E2%80%A2%20IMPROVE%20%E2%80%A2%20REPEAT&fontColor=F59E0B&fontSize=20&animation=twinkling"
+  alt="Learn, build, improve and repeat"
 />
 
-<!-- Animated footer -->
+<!-- ===================== ANIMATED FOOTER ===================== -->
 
 <img
   width="100%"
-  src="https://capsule-render.vercel.app/api?type=waving&height=170&color=0:C6A15B,40:3B2268,75:171022,100:050505&section=footer&animation=fadeIn"
-  alt="Footer"
+  src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:F59E0B,25:EC4899,55:7E22CE,80:172554,100:020617&section=footer&animation=fadeIn"
+  alt="Animated footer"
 />
 
 </div>
