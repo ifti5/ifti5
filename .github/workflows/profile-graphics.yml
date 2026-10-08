@@ -1,0 +1,837 @@
+name: Generate Profile Graphics
+
+on:
+  # Automatically update every day
+  schedule:
+    - cron: "15 0 * * *"
+
+  # Allow manual execution
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-graphics
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    name: Generate contribution graphics
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # ========================================================
+      # CHECKOUT REPOSITORY
+      # ========================================================
+
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      # ========================================================
+      # GENERATE DETAILED CONTRIBUTION DASHBOARD
+      # ========================================================
+
+      - name: Generate detailed contribution dashboard
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+          script: |
+            const fs = require("fs");
+
+            const login = context.repo.owner;
+
+            const query = `
+              query ContributionData($login: String!) {
+                user(login: $login) {
+                  contributionsCollection {
+                    contributionCalendar {
+                      totalContributions
+                      weeks {
+                        contributionDays {
+                          contributionCount
+                          date
+                          weekday
+                          color
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `;
+
+            const result = await github.graphql(query, { login });
+
+            const calendar =
+              result.user.contributionsCollection.contributionCalendar;
+
+            const days = calendar.weeks
+              .flatMap((week) => week.contributionDays)
+              .sort((a, b) => a.date.localeCompare(b.date));
+
+            const today = new Date().toISOString().slice(0, 10);
+
+            const validDays = days.filter((day) => day.date <= today);
+
+            const totalContributions = calendar.totalContributions;
+
+            const activeDays = validDays.filter(
+              (day) => day.contributionCount > 0
+            ).length;
+
+            const bestDay = validDays.reduce(
+              (best, day) =>
+                day.contributionCount > best.contributionCount ? day : best,
+              {
+                contributionCount: 0,
+                date: "No activity"
+              }
+            );
+
+            // Calculate longest streak
+            let longestStreak = 0;
+            let runningStreak = 0;
+
+            for (const day of validDays) {
+              if (day.contributionCount > 0) {
+                runningStreak += 1;
+                longestStreak = Math.max(longestStreak, runningStreak);
+              } else {
+                runningStreak = 0;
+              }
+            }
+
+            // Calculate current streak
+            let currentStreak = 0;
+            let currentIndex = validDays.length - 1;
+
+            // If today has no activity, begin checking from yesterday
+            if (
+              currentIndex >= 0 &&
+              validDays[currentIndex].date === today &&
+              validDays[currentIndex].contributionCount === 0
+            ) {
+              currentIndex -= 1;
+            }
+
+            while (
+              currentIndex >= 0 &&
+              validDays[currentIndex].contributionCount > 0
+            ) {
+              currentStreak += 1;
+              currentIndex -= 1;
+            }
+
+            // Monthly totals
+            const monthlyMap = new Map();
+
+            for (const day of validDays) {
+              const monthKey = day.date.slice(0, 7);
+
+              monthlyMap.set(
+                monthKey,
+                (monthlyMap.get(monthKey) || 0) +
+                  day.contributionCount
+              );
+            }
+
+            const monthlyData = [...monthlyMap.entries()]
+              .sort((a, b) => a[0].localeCompare(b[0]))
+              .slice(-12)
+              .map(([month, count]) => ({
+                month,
+                count
+              }));
+
+            // Weekday totals
+            const weekdayNames = [
+              "Sunday",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ];
+
+            const weekdayTotals = Array(7).fill(0);
+
+            for (const day of validDays) {
+              weekdayTotals[day.weekday] += day.contributionCount;
+            }
+
+            const weekdayData = weekdayNames.map((name, index) => ({
+              name,
+              count: weekdayTotals[index]
+            }));
+
+            // Last 12 weeks
+            const weeklyData = calendar.weeks
+              .slice(-12)
+              .map((week, index) => {
+                const weekDays = week.contributionDays.filter(
+                  (day) => day.date <= today
+                );
+
+                const count = weekDays.reduce(
+                  (sum, day) => sum + day.contributionCount,
+                  0
+                );
+
+                const firstDate =
+                  weekDays.length > 0
+                    ? weekDays[0].date.slice(5)
+                    : `W${index + 1}`;
+
+                return {
+                  label: firstDate,
+                  count
+                };
+              });
+
+            const monthlyMaximum = Math.max(
+              1,
+              ...monthlyData.map((item) => item.count)
+            );
+
+            const weekdayMaximum = Math.max(
+              1,
+              ...weekdayData.map((item) => item.count)
+            );
+
+            const weeklyMaximum = Math.max(
+              1,
+              ...weeklyData.map((item) => item.count)
+            );
+
+            function escapeXml(value) {
+              return String(value)
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&apos;");
+            }
+
+            function formatMonth(monthKey) {
+              const date = new Date(`${monthKey}-01T00:00:00Z`);
+
+              return date.toLocaleString("en-US", {
+                month: "short",
+                year: "2-digit",
+                timeZone: "UTC"
+              });
+            }
+
+            function statisticCard(x, title, value, color) {
+              return `
+                <g>
+                  <rect
+                    x="${x}"
+                    y="92"
+                    width="265"
+                    height="92"
+                    rx="18"
+                    fill="#0F172A"
+                    stroke="${color}"
+                    stroke-opacity="0.55"
+                  />
+
+                  <circle
+                    cx="${x + 31}"
+                    cy="123"
+                    r="8"
+                    fill="${color}"
+                  />
+
+                  <text
+                    x="${x + 50}"
+                    y="130"
+                    class="stat-value"
+                  >
+                    ${escapeXml(value)}
+                  </text>
+
+                  <text
+                    x="${x + 26}"
+                    y="163"
+                    class="stat-label"
+                  >
+                    ${escapeXml(title)}
+                  </text>
+                </g>
+              `;
+            }
+
+            function horizontalBar({
+              x,
+              y,
+              label,
+              value,
+              maximum,
+              maximumWidth,
+              delay
+            }) {
+              const finalWidth =
+                value === 0
+                  ? 0
+                  : Math.max(
+                      4,
+                      Math.round((value / maximum) * maximumWidth)
+                    );
+
+              return `
+                <g>
+                  <text
+                    x="${x}"
+                    y="${y + 12}"
+                    class="bar-label"
+                  >
+                    ${escapeXml(label)}
+                  </text>
+
+                  <rect
+                    x="${x + 112}"
+                    y="${y}"
+                    width="${maximumWidth}"
+                    height="15"
+                    rx="7.5"
+                    fill="#1E293B"
+                  />
+
+                  <rect
+                    x="${x + 112}"
+                    y="${y}"
+                    width="0"
+                    height="15"
+                    rx="7.5"
+                    fill="url(#barGradient)"
+                  >
+                    <animate
+                      attributeName="width"
+                      from="0"
+                      to="${finalWidth}"
+                      dur="0.9s"
+                      begin="${delay}s"
+                      fill="freeze"
+                    />
+                  </rect>
+
+                  <text
+                    x="${x + 112 + maximumWidth + 18}"
+                    y="${y + 12}"
+                    class="bar-value"
+                  >
+                    ${value}
+                  </text>
+                </g>
+              `;
+            }
+
+            const monthlyBars = monthlyData
+              .map((item, index) =>
+                horizontalBar({
+                  x: 67,
+                  y: 265 + index * 25,
+                  label: formatMonth(item.month),
+                  value: item.count,
+                  maximum: monthlyMaximum,
+                  maximumWidth: 310,
+                  delay: (index * 0.07).toFixed(2)
+                })
+              )
+              .join("");
+
+            const weekdayBars = weekdayData
+              .map((item, index) =>
+                horizontalBar({
+                  x: 636,
+                  y: 277 + index * 40,
+                  label: item.name,
+                  value: item.count,
+                  maximum: weekdayMaximum,
+                  maximumWidth: 310,
+                  delay: (0.25 + index * 0.09).toFixed(2)
+                })
+              )
+              .join("");
+
+            const weeklyBars = weeklyData
+              .map((item, index) => {
+                const maximumHeight = 92;
+
+                const finalHeight =
+                  item.count === 0
+                    ? 0
+                    : Math.max(
+                        5,
+                        Math.round(
+                          (item.count / weeklyMaximum) * maximumHeight
+                        )
+                      );
+
+                const x = 88 + index * 88;
+                const finalY = 753 - finalHeight;
+
+                return `
+                  <g>
+                    <rect
+                      x="${x}"
+                      y="661"
+                      width="55"
+                      height="92"
+                      rx="7"
+                      fill="#1E293B"
+                    />
+
+                    <rect
+                      x="${x}"
+                      y="753"
+                      width="55"
+                      height="0"
+                      rx="7"
+                      fill="url(#weeklyGradient)"
+                    >
+                      <animate
+                        attributeName="height"
+                        from="0"
+                        to="${finalHeight}"
+                        dur="0.9s"
+                        begin="${(0.35 + index * 0.08).toFixed(2)}s"
+                        fill="freeze"
+                      />
+
+                      <animate
+                        attributeName="y"
+                        from="753"
+                        to="${finalY}"
+                        dur="0.9s"
+                        begin="${(0.35 + index * 0.08).toFixed(2)}s"
+                        fill="freeze"
+                      />
+                    </rect>
+
+                    <text
+                      x="${x + 27.5}"
+                      y="${Math.max(651, finalY - 7)}"
+                      text-anchor="middle"
+                      class="weekly-value"
+                    >
+                      ${item.count}
+                    </text>
+
+                    <text
+                      x="${x + 27.5}"
+                      y="776"
+                      text-anchor="middle"
+                      class="weekly-label"
+                    >
+                      ${escapeXml(item.label)}
+                    </text>
+                  </g>
+                `;
+              })
+              .join("");
+
+            const bestDayText =
+              bestDay.contributionCount > 0
+                ? `${bestDay.contributionCount} commits`
+                : "No activity";
+
+            const svg = `
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1200"
+                height="820"
+                viewBox="0 0 1200 820"
+                role="img"
+                aria-labelledby="title description"
+              >
+                <title id="title">
+                  ${escapeXml(login)} GitHub contribution analytics
+                </title>
+
+                <desc id="description">
+                  Detailed GitHub contribution dashboard with monthly,
+                  weekday, weekly and streak statistics.
+                </desc>
+
+                <defs>
+                  <linearGradient
+                    id="backgroundGradient"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="1"
+                  >
+                    <stop offset="0%" stop-color="#020617" />
+                    <stop offset="48%" stop-color="#0F172A" />
+                    <stop offset="100%" stop-color="#1E1B4B" />
+                  </linearGradient>
+
+                  <linearGradient
+                    id="titleGradient"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="0"
+                  >
+                    <stop offset="0%" stop-color="#38BDF8" />
+                    <stop offset="50%" stop-color="#A78BFA" />
+                    <stop offset="100%" stop-color="#F59E0B" />
+                  </linearGradient>
+
+                  <linearGradient
+                    id="barGradient"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="0"
+                  >
+                    <stop offset="0%" stop-color="#0EA5E9" />
+                    <stop offset="48%" stop-color="#8B5CF6" />
+                    <stop offset="100%" stop-color="#EC4899" />
+                  </linearGradient>
+
+                  <linearGradient
+                    id="weeklyGradient"
+                    x1="0"
+                    y1="1"
+                    x2="0"
+                    y2="0"
+                  >
+                    <stop offset="0%" stop-color="#2563EB" />
+                    <stop offset="55%" stop-color="#8B5CF6" />
+                    <stop offset="100%" stop-color="#F59E0B" />
+                  </linearGradient>
+
+                  <filter
+                    id="glow"
+                    x="-20%"
+                    y="-20%"
+                    width="140%"
+                    height="140%"
+                  >
+                    <feGaussianBlur
+                      stdDeviation="4"
+                      result="blur"
+                    />
+
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+
+                  <style>
+                    text {
+                      font-family:
+                        Inter,
+                        Segoe UI,
+                        Arial,
+                        sans-serif;
+                    }
+
+                    .main-title {
+                      font-size: 27px;
+                      font-weight: 800;
+                      letter-spacing: 1.5px;
+                      fill: url(#titleGradient);
+                    }
+
+                    .subtitle {
+                      font-size: 13px;
+                      font-weight: 500;
+                      letter-spacing: 1.2px;
+                      fill: #94A3B8;
+                    }
+
+                    .panel-title {
+                      font-size: 16px;
+                      font-weight: 700;
+                      fill: #F8FAFC;
+                    }
+
+                    .panel-description {
+                      font-size: 11px;
+                      fill: #94A3B8;
+                    }
+
+                    .stat-value {
+                      font-size: 25px;
+                      font-weight: 800;
+                      fill: #FFFFFF;
+                    }
+
+                    .stat-label {
+                      font-size: 11px;
+                      font-weight: 600;
+                      letter-spacing: 1px;
+                      fill: #94A3B8;
+                    }
+
+                    .bar-label {
+                      font-size: 11px;
+                      font-weight: 600;
+                      fill: #CBD5E1;
+                    }
+
+                    .bar-value {
+                      font-size: 11px;
+                      font-weight: 700;
+                      fill: #F8FAFC;
+                    }
+
+                    .weekly-value {
+                      font-size: 10px;
+                      font-weight: 700;
+                      fill: #E2E8F0;
+                    }
+
+                    .weekly-label {
+                      font-size: 9px;
+                      fill: #94A3B8;
+                    }
+
+                    .footer-text {
+                      font-size: 11px;
+                      letter-spacing: 0.6px;
+                      fill: #64748B;
+                    }
+                  </style>
+                </defs>
+
+                <!-- Background -->
+
+                <rect
+                  x="2"
+                  y="2"
+                  width="1196"
+                  height="816"
+                  rx="28"
+                  fill="url(#backgroundGradient)"
+                  stroke="#334155"
+                  stroke-width="2"
+                />
+
+                <!-- Header -->
+
+                <circle
+                  cx="43"
+                  cy="43"
+                  r="9"
+                  fill="#38BDF8"
+                  filter="url(#glow)"
+                />
+
+                <text
+                  x="65"
+                  y="49"
+                  class="main-title"
+                >
+                  CONTRIBUTION ANALYTICS
+                </text>
+
+                <text
+                  x="65"
+                  y="70"
+                  class="subtitle"
+                >
+                  ${escapeXml(login.toUpperCase())} • LAST 12 MONTHS
+                </text>
+
+                <text
+                  x="1155"
+                  y="48"
+                  text-anchor="end"
+                  class="subtitle"
+                >
+                  UPDATED AUTOMATICALLY
+                </text>
+
+                <!-- Statistic cards -->
+
+                ${statisticCard(
+                  38,
+                  "TOTAL CONTRIBUTIONS",
+                  totalContributions,
+                  "#38BDF8"
+                )}
+
+                ${statisticCard(
+                  326,
+                  "ACTIVE DAYS",
+                  activeDays,
+                  "#10B981"
+                )}
+
+                ${statisticCard(
+                  614,
+                  "CURRENT / LONGEST STREAK",
+                  `${currentStreak} / ${longestStreak} days`,
+                  "#A78BFA"
+                )}
+
+                ${statisticCard(
+                  902,
+                  `BEST DAY • ${bestDay.date}`,
+                  bestDayText,
+                  "#F59E0B"
+                )}
+
+                <!-- Monthly panel -->
+
+                <rect
+                  x="38"
+                  y="210"
+                  width="552"
+                  height="378"
+                  rx="20"
+                  fill="#0B1220"
+                  stroke="#334155"
+                />
+
+                <text
+                  x="66"
+                  y="240"
+                  class="panel-title"
+                >
+                  Monthly Contributions
+                </text>
+
+                <text
+                  x="66"
+                  y="257"
+                  class="panel-description"
+                >
+                  Contribution totals grouped by month
+                </text>
+
+                ${monthlyBars}
+
+                <!-- Weekday panel -->
+
+                <rect
+                  x="610"
+                  y="210"
+                  width="552"
+                  height="378"
+                  rx="20"
+                  fill="#0B1220"
+                  stroke="#334155"
+                />
+
+                <text
+                  x="636"
+                  y="240"
+                  class="panel-title"
+                >
+                  Activity by Weekday
+                </text>
+
+                <text
+                  x="636"
+                  y="257"
+                  class="panel-description"
+                >
+                  Contribution distribution across the week
+                </text>
+
+                ${weekdayBars}
+
+                <!-- Weekly panel -->
+
+                <rect
+                  x="38"
+                  y="608"
+                  width="1124"
+                  height="188"
+                  rx="20"
+                  fill="#0B1220"
+                  stroke="#334155"
+                />
+
+                <text
+                  x="66"
+                  y="638"
+                  class="panel-title"
+                >
+                  Last 12 Weeks
+                </text>
+
+                <text
+                  x="1136"
+                  y="638"
+                  text-anchor="end"
+                  class="panel-description"
+                >
+                  Animated weekly contribution totals
+                </text>
+
+                ${weeklyBars}
+
+                <text
+                  x="600"
+                  y="810"
+                  text-anchor="middle"
+                  class="footer-text"
+                >
+                  LEARN • BUILD • TEST • IMPROVE • REPEAT
+                </text>
+              </svg>
+            `;
+
+            fs.mkdirSync("dist", { recursive: true });
+
+            fs.writeFileSync(
+              "dist/contribution-dashboard.svg",
+              svg,
+              "utf8"
+            );
+
+            console.log("Contribution dashboard generated successfully.");
+
+      # ========================================================
+      # GENERATE ANIMATED CONTRIBUTION SNAKES
+      # ========================================================
+
+      - name: Generate animated contribution snakes
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+
+          outputs: |
+            dist/github-contribution-grid-snake.svg?color_snake=#7C3AED&color_dots=#F8FAFC,#BAE6FD,#818CF8,#C026D3,#F59E0B
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#38BDF8&color_dots=#0D1117,#172554,#312E81,#7C3AED,#EC4899
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ========================================================
+      # VERIFY GENERATED FILES
+      # ========================================================
+
+      - name: Verify generated profile graphics
+        run: |
+          echo "Generated files:"
+          find dist -maxdepth 1 -type f -print
+
+          test -f dist/contribution-dashboard.svg
+          test -f dist/github-contribution-grid-snake.svg
+          test -f dist/github-contribution-grid-snake-dark.svg
+
+      # ========================================================
+      # PUBLISH EVERYTHING TO OUTPUT BRANCH
+      # ========================================================
+
+      - name: Publish graphics to output branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
+          force_orphan: true
+          commit_message: "Update profile contribution graphics"
