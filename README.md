@@ -737,11 +737,174 @@ A dynamic view of my repositories, languages, commits, and development activity.
   alt="Colorful divider"
 />
 
-<h2>Animated Contribution Journey</h2>
+<!-- =========================================================
+                 CONTRIBUTION ANALYTICS
+========================================================== -->
+
+<div align="center">
+
+<img
+  width="78%"
+  src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:020617,20:06B6D4,45:8B5CF6,70:EC4899,100:020617"
+  alt="Contribution section divider"
+/>
+
+<br/>
+
+<h2>📊 Contribution Analytics</h2>
 
 <p>
-Every contribution represents another experiment, lesson, improvement, or completed idea.
+A detailed view of my development activity, coding rhythm,
+learning progress, and project contributions.
 </p>
+
+<br/>
+
+<!-- Contribution navigation buttons -->
+
+<table>
+<tr>
+
+<td align="center">
+  <a href="https://github.com/ifti5">
+    <img
+      src="https://img.shields.io/badge/FULL%20YEAR-CONTRIBUTION%20CALENDAR-8B5CF6?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=312E81"
+      alt="Full-year contribution calendar"
+    />
+  </a>
+</td>
+
+<td align="center">
+  <a href="https://github.com/ifti5">
+    <img
+      src="https://img.shields.io/badge/ACTIVITY-CODING%20RHYTHM-06B6D4?style=for-the-badge&logo=clockify&logoColor=FFFFFF&labelColor=164E63"
+      alt="Coding activity rhythm"
+    />
+  </a>
+</td>
+
+<td align="center">
+  <a href="https://github.com/ifti5?tab=repositories">
+    <img
+      src="https://img.shields.io/badge/PROJECTS-EXPLORE%20REPOSITORIES-F59E0B?style=for-the-badge&logo=github&logoColor=FFFFFF&labelColor=78350F"
+      alt="Explore repositories"
+    />
+  </a>
+</td>
+
+</tr>
+</table>
+
+<br/><br/>
+
+<!-- ================= FULL-YEAR 3D BAR CALENDAR ================= -->
+
+<h3>🗓️ Full-Year Contribution Landscape</h3>
+
+<p>
+A detailed isometric bar-style visualization of my GitHub contributions
+throughout the year.
+</p>
+
+<br/>
+
+<img
+  width="100%"
+  src="./assets/contribution-calendar.svg"
+  alt="Full-year isometric GitHub contribution calendar"
+/>
+
+<br/><br/>
+
+<!-- ================= CODING HABITS BAR CHART ================= -->
+
+<h3>📈 Contribution and Coding Rhythm</h3>
+
+<p>
+Bar-chart analytics showing my recent activity by weekday,
+time of day, and coding schedule.
+</p>
+
+<br/>
+
+<img
+  width="100%"
+  src="./assets/coding-habits.svg"
+  alt="GitHub coding habits and activity bar charts"
+/>
+
+<br/><br/>
+
+<!-- ================= ANIMATED SNAKE ================= -->
+
+<h3>🐍 Animated Contribution Journey</h3>
+
+<p>
+Every contribution represents another experiment, lesson,
+improvement, or completed idea.
+</p>
+
+<br/>
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/ifti5/ifti5/output/github-contribution-grid-snake-dark.svg"
+  />
+
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/ifti5/ifti5/output/github-contribution-grid-snake.svg"
+  />
+
+  <img
+    width="100%"
+    src="https://raw.githubusercontent.com/ifti5/ifti5/output/github-contribution-grid-snake.svg"
+    alt="Animated GitHub contribution snake"
+  />
+</picture>
+
+<br/><br/>
+
+<!-- Contribution summary buttons -->
+
+<table>
+<tr>
+
+<td align="center">
+  <img
+    src="https://img.shields.io/badge/FOCUS-CONSISTENT%20LEARNING-10B981?style=for-the-badge&logo=bookstack&logoColor=FFFFFF&labelColor=064E3B"
+    alt="Consistent learning"
+  />
+</td>
+
+<td align="center">
+  <img
+    src="https://img.shields.io/badge/PROCESS-BUILD%20AND%20IMPROVE-EC4899?style=for-the-badge&logo=rocket&logoColor=FFFFFF&labelColor=831843"
+    alt="Build and improve"
+  />
+</td>
+
+<td align="center">
+  <img
+    src="https://img.shields.io/badge/DIRECTION-PRACTICAL%20PROJECTS-0EA5E9?style=for-the-badge&logo=githubactions&logoColor=FFFFFF&labelColor=0C4A6E"
+    alt="Practical projects"
+  />
+</td>
+
+</tr>
+</table>
+
+<br/>
+
+<a href="https://git.io/typing-svg">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=18&duration=2800&pause=1000&color=38BDF8&center=true&vCenter=true&repeat=true&width=900&height=50&lines=Every+commit+is+part+of+the+learning+journey.;Small+improvements+create+meaningful+progress.;Learn.+Build.+Test.+Improve.+Repeat."
+    alt="Animated contribution message"
+  />
+</a>
+
+</div>
 
 <br/>
 
