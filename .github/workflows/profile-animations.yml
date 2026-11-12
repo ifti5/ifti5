@@ -1,1 +1,71 @@
+name: Profile Animations
+
+on:
+  # Refresh every day at 00:15 UTC
+  schedule:
+    - cron: "15 0 * * *"
+
+  # Allow manual execution from the Actions page
+  workflow_dispatch:
+
+  # Rebuild when the workflow or generator changes
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/profile-animations.yml"
+      - ".github/scripts/activity_graph.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-animations
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    name: Generate animated profile assets
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Create output directory
+        run: mkdir -p dist
+
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg?color_snake=%23F59E0B&color_dots=%23E2E8F0,%23BAE6FD,%2338BDF8,%238B5CF6,%23EC4899
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=%2338BDF8&color_dots=%23020617,%23172554,%23312E81,%237E22CE,%23EC4899
+
+      - name: Generate animated contribution activity graph
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USERNAME: ${{ github.repository_owner }}
+        run: python .github/scripts/activity_graph.py
+
+      - name: Verify generated files
+        run: |
+          echo "Generated profile assets:"
+          ls -lah dist
+
+          test -f dist/activity-graph.svg
+          test -f dist/github-contribution-grid-snake.svg
+          test -f dist/github-contribution-grid-snake-dark.svg
+
+      - name: Publish assets to output branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: output
+          publish_dir: ./dist
+          force_orphan: true
+          enable_jekyll: false
+          commit_message: "chore: refresh animated profile assets"
 
